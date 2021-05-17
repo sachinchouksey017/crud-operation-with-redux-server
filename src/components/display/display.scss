@@ -1,0 +1,73 @@
+.display {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    padding: 0 7%;
+
+    .card {
+        width: 240px;
+        min-height: 100px;
+        border-radius: 7px;
+        padding: 10px;
+        border: 1px solid #80808069;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-right: 15px;
+        margin-top: 15px;
+
+        .title {
+        }
+        .des {
+        }
+        .title,
+        .des {
+            padding: 8px 0;
+            cursor: pointer;
+            width: 100%;
+            text-align: start;
+        }
+        .action {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 98%;
+            min-height: 44px;
+            .button {
+                display: none;
+            }
+        }
+    }
+    .card:hover {
+        box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+        .action {
+            .button {
+                display: block;
+            }
+        }
+    }
+}
+.update {
+    .des {
+        padding-top: 10px;
+    }
+    .title {
+        min-height: 20px;
+    }
+    .title,
+    .des {
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        letter-spacing: 0.00625em;
+        font-family: "Google Sans", Roboto, Arial, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        color: #202124;
+        min-width: 345px;
+        padding: 10px 10px 0;
+    }
+}

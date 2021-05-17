@@ -1,0 +1,52 @@
+.create-parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    .note {
+        box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+        width: 600px;
+        min-height: 30px;
+        border: solid transparent;
+        border-width: 1px 1px 1px 6px;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .large-note {
+        min-height: 140px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .des {
+            padding-top: 10px;
+        }
+        .title {
+            min-height: 20px;
+        }
+        .title,
+        .des {
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            letter-spacing: 0.00625em;
+            font-family: "Google Sans", Roboto, Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            color: #202124;
+        }
+        .action {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 98%;
+        }
+    }
+}
